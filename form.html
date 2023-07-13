@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+    <title>JKfoto</title>
+    <link rel="stylesheet" href="mainstyle.css">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head> 
+<body>
+    <header id="toppage"> 
+    	<svg>
+    		<defs>
+        		<linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+          		<stop offset="0%" style="stop-color:#EDFBFF;stop-opacity:1" />
+          		<stop offset="100%" style="stop-color:#9BD7FB;stop-opacity:1" />
+        		</linearGradient>
+      		</defs>
+      		<rect x="10" y="10" rx="10" ry="10" width="90" height="40"
+  style="fill:url(#grad1);stroke:black;stroke-width:3" />
+      		<text fill="black" font-size="25" font-family="Verdana" x="15" y="40">JKfoto</text>
+      	</svg>
+          <nav><h2>
+        	<a href="JKfoto.html" style="font-size: 3.5vh">Main Page</a>
+        	<a href="gallery.html" style="font-size: 3.5vh">Gallery</a>
+        	<a href="form.html" style="font-size: 3.5vh">Form</a></h2>
+        </nav>
+    </header>
+	<br><br><br><br><br>
+    <h1>Form, questions and feedback</h1>
+    <h2>Below you can fill in form if you have questions or would like to help me in building this site, by sending your feedback.</h2>
+    <form>
+    	<h3>Questions:</h3>
+    	<label>If you want introduce yourself.<br>If not anonymous feedback is also welcome</label><br><br>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="surname">Surname:</label><br>
+        <input type="text" id="surname" name="surname"><br>
+        <label for="mail">Mail:</label><br>
+        <input type="text" id="mail" name="mail"><br>
+        Sex:
+        <input type="radio" name="sex" value="M"> male
+        <input type="radio" name="sex" value="F"> female<br><br>
+        <label for="question">In order to ask me about stx, put it here:</label><br>
+        <textarea id="question" rows="10">
+        </textarea><br><br>
+        <label>What is the importance of this message?</label><br>
+        <input list="importance">
+        <datalist id="importance">        	
+            <option value="Very important">
+            <option value="Important">
+            <option value="Can wait">       
+        </datalist><br><br><br>
+        <h3>Feedback:</h3>
+        <label for="evaluation">How do you evaluate this site in scale form 1 to 10:</label><br>
+        <input type="number" id="evaluation" name="evaluation" min="1" max="10" step="1" value="1"><br><br>
+        <label for="feedback">If you have any tips and propositions on how to develop this site.<br>I will be greatful if you put it in textarea below:</label><br>
+        <textarea id="feedback" rows="6">
+        </textarea><br><br>        
+        <div class="centered">                   	
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </div>        
+    </form>
+    <svg class="moving" height="80" width="160">
+        <polygon points="70,20 70,30 10,30 10,50 70,50 70,60 150,10" style="fill: #2263A5; stroke:black; stroke-width:2" />
+    </svg>     
+    <br><br><br><br>
+    <footer>
+        <p id="downpage">Author: JK</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>

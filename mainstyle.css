@@ -1,0 +1,144 @@
+* {
+    color: rgb(0,51,102);
+    background-color: #E5F4FA; 
+}
+
+a {
+    font-size: 2vh;
+}
+
+body {
+    margin: 0px;
+}
+
+header {
+    top: 0;
+    position: fixed;
+    background-color: white;
+    width: 100%;   
+}
+header svg {
+    background-color: white;
+    float: left;
+    width: 120px;
+    height: 80px;
+}
+header nav {
+    margin-right: 3vh;
+    float: right;
+    background-color: transparent;
+}
+header nav h2 {
+    background-color: transparent;
+}
+header nav a {
+    background-color: transparent;
+    text-decoration: none;
+    margin-right: 11px;
+}
+
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+
+caption.color {
+    color: black;
+}
+
+h3.center {
+    text-align: center;
+    margin-right: 10vw;
+    margin-left: 10vw;
+}
+
+p {
+    text-align: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+a:link {
+    color: rgb(0,51,102);
+}
+a:visited {
+    color: black;
+}
+a:active {
+    color: #86C5D8;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+table, th, td {  
+    border: 1px solid black;
+}
+
+img {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+img:hover {
+    transform: scale(1.5);
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+}
+footer p {
+    background-color: white;
+}
+
+form {
+    margin-left: 5vw;
+}
+
+textarea {
+    width: 60%; 
+}
+
+.moving {
+    position: relative;
+    animation-name: linearly;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes linearly {
+    0% {left:0px; top:0px;}
+    50% {left:180px; top:0px;}
+    100% {left:0px; top:0px;}
+}  
+
+.centered
+{
+    margin-left: 300px;
+}
+
+@media screen and (max-width: 600px) {
+    textarea {
+        width: 90%;
+    }
+}
+
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+    

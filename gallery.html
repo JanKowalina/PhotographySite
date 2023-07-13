@@ -1,0 +1,98 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+    <title>JKfoto</title>
+    <link rel="stylesheet" href="mainstyle.css">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+    <style>
+    img:hover {
+    transform: scale(1.0);
+    }    
+    * {
+        box-sizing: border-box;
+    }
+    .column {
+        float: left;
+        width: 50%;
+        padding: 5px;
+    }
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    @media screen and (max-width: 800px) {
+        .column {
+            width: 100%;
+        }
+    }
+    </style>		
+</head> 
+<body>
+    <header> 
+    	<svg>
+    		<defs>
+        		<linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+          		<stop offset="0%" style="stop-color:#EDFBFF;stop-opacity:1" />
+          		<stop offset="100%" style="stop-color:#9BD7FB;stop-opacity:1" />
+        		</linearGradient>
+      		</defs>
+      		<rect x="10" y="10" rx="10" ry="10" width="90" height="40"
+  style="fill:url(#grad1);stroke:black;stroke-width:3" />
+      		<text fill="black" font-size="25" font-family="Verdana" x="15" y="40">JKfoto</text>
+      	</svg>	
+        
+          <nav><h2>
+        	<a href="JKfoto.html" style="font-size: 3.5vh">Main Page</a>
+        	<a href="gallery.html" style="font-size: 3.5vh">Gallery</a>
+        	<a href="form.html" style="font-size: 3.5vh">Form</a></h2>
+        </nav>
+    </header>
+
+    <p id="toppage">It will be not visible, because it will be under header, it is to help us to move to top of page</p>
+    <br><br><br><br>
+    <h1>Gallery with more pictures:</h1>
+    <a href="#downpage">Down of the page</a>
+    <div class="row">
+        <div class="column">
+            <img src="DSC04776.jpg" alt="Image1" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="DSC04788.jpg" alt="Image2" style="width:100%">
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="DSC04843.jpg" alt="Image3" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="DSC04854.jpg" alt="Image4" style="width:100%">
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="DSC05813.jpg" alt="Image5" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="DSC05861.jpg" alt="Image6" style="width:100%">
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="DSC05901.jpg" alt="Image7" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="DSC05997.jpg" alt="Image8" style="width:100%">
+        </div>
+    </div>
+    <a href="#toppage">Top of the page</a> 
+    <br><br><br><br><br>
+
+    <p id="downpage">Again not visible, only form moving to down of page</p>
+    <footer>
+        <p>Author: JK</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
